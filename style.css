@@ -1,146 +1,221 @@
-body {				
-	color: #2c3e50;
-	background-color: #ecf0f1;
-	margin: 0; /*other wise everything will be wrapped in a small margin*/
-	font-family: 'Raleway';
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #2c3e50;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 2px solid #2980b9;
+}
+
+a:hover {
+    color: #2980b9;
 }
 
 /* Header */
 
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 20px auto;
-	width: 80%;
-}
-
-
-.logo {
-	color: #2980b9;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 46px;
-	font-family: 'Bitter';
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.logo {
+    font-size: 46px;
+    color: #2980b9;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: #2c3e50;
+}
+
+.nav-item2 {
+    margin: 0 10px;
+    color: #ffffff;
+	display: flex;
+    flex-direction: column;
+	border:0;
+	justify-content: space-between;
+}
+
+/* Greeting */
 
 
 .greeting {
-	text-align: center;
-	font-size: 52px;
+    font-size: 52px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .greeting-text {
-	font-style: italic;
+    font-size: 56px;
+    text-transform: uppercase;
 }
 
 .greeting-name {
-	color: #2980b9;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: 'Bitter';	
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2980b9;
+    font-family: 'Bitter', serif;
 }
 
+/* Angle icon */
 
-.nav-item {
-	border-bottom: 1px solid #2980b9;
-	text-decoration: none;
-	color: #2c3e50;
-	margin: 0 10px;
+.angle-icon {
+    text-align: center;
 }
-
-
+.angle-down {
+    position: absolute;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    color: #2c3e50;
+}
 
 /* About */
 
 .about {
-	background-color: #2c3e50;
-	padding: 20px 0 20px 0; /*starts from the top, then right, bottom, left (clockwise)*/
-	text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 100px 0;
 }
 
 .about-title {
-	color: #ecf0f1;
-	font-size: 56px;
-	text-transform: uppercase;
+    font-size: 30px;
 }
 
+
 .about-image {
-	width: 15%;
-	border-radius: 50%; /*50 is what you need for a perfect circle, if height = width on the base image */
+    width: 15%;
+    border-radius: 50%;
+    padding: 50px 0;
 }
 
 .about-text {
-	color: #ecf0f1;
+    padding-top: 20px;
+    margin: 0;
 }
 
-.view-resume-link {
-	color: #ecf0f1;
-	font-weight: bold;
-	border-bottom: 1px solid #2980b9;
-	text-decoration: none;
-	font-family: 'Bitter';
+.about-content {
+    padding-top: 20px;
+    margin: 5px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.view-resume-button {
+    font-size: 24px;
+    padding-top: 100px;
+}
+
+.view-resume-button-link {
+    text-decoration: none;
+    color: #ecf0f1;;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+/* Video */
+
+.video {
+    text-align: center;
+    padding: 200px 0 100px 0;
+}
+
+.video-title {
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+.video-image {
+    padding: 100px 0;
+    width: 65%;
+}
+
+.video-watch {
+    font-size: 24px;
+}
+
+.video-link {
+    text-decoration: none;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
 }
 
 /* Footer */
 
 .footer {
-	padding: 100px;
-	text-align: center;
-	background-color: #bdc3c7;
-
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    text-align: center;
+    padding: 100px;
+}
 
 .footer-title {
-	text-transform: uppercase;
-	color: #2c3e50;
-	font-size: 56px;
-	text-align: center;
+    font-size: 20px;
 }
 
-.footer-trademark {
-	color: #7f8c8d;
-	font-size: 13px; /*By law in the UK you are not allowed to have text smaller than 12px, e.g. otherwise people make tiny 'unsubscribe buttons etc*/
-	text-align: center;
+.footer-subtitle {
+    font-size: 11px;
 }
-
 
 .social-media {
-	text-align: center;
-	padding: 50px;
+    padding: 50px;
 }
 
-
-.social-media-link {
-	color: #2c3e50;
-	margin: 0 10px 0 10px;
-}
-	
-
-
-/* Resume */
-
-.resume {
-	background-color: #2c3e50;
-	padding: 20px 0 20px 0; /*starts from the top, then right, bottom, left (clockwise)*/
-	text-align: center;
+.social-media-icon {
+    display: inline-block;
+    padding: 10px;
 }
 
-.resume-title {
-	color: #ecf0f1;
-	font-size: 56px;
-	text-transform: uppercase;
+.social-media-icon:hover {
+    color: #2980b9;
 }
 
-.resume-image {
-	width: 25%;
-
+.social-media-icon-link {
+    text-transform: none;
+    color: #2c3e50;
+    border:none;
 }
 
-
+.trademark {
+    font-size: 13px;
+    color: #7f8c8d;
+}
