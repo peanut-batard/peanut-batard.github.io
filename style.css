@@ -1,221 +1,141 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker'); /* go to https://fonts.google.com/ and paste the @import bit; you can add more fonts below */
 
 html {
     height: 100%;
+	font-family: 'Permanent Marker';
 }
 
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: #fff0e6;
     color: #2c3e50;
     height: 100%;
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Permanent Marker';
 }
 
-a {
-    text-decoration: none;
-    border-bottom: 2px solid #2980b9;
+
+.landing_screen {
+	height: 100%;
+	background-color: #ffdbc6; /* sky colour */ 
 }
+
+
+.title {
+	height: 20%;
+}
+
+
+.title_text {
+	font-size: 60px;
+	text-align: center;
+}
+
+.sky {	
+	height: 80%;
+	
+	
+}
+
+.sun {
+    width: 30%;
+    height:0;
+    padding-bottom: 30%; /* need to keep width = padding bottom */
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    background: #ffe500;
+	margin: auto; /* to center the sun horizontally, i.e. have the same margins left and right */
+
+}
+
+
+
+.video_screen {
+	height: 200%; /* to control the height of the blue section */
+	background: #a0ceff
+}
+
+.video_top {
+	height: 10%;
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+
+.video_title {
+	font-size: 40px;
+    width: 50%;
+	flex: 50%;
+	
+}	
+
+
+.video_bottom {
+	height: 90%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}	
+
+
+.video_year {
+	color: #ff66ed; /* green */
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	
+}
+	
+.video_content {
+	font-size: 15px;
+	color: #ffffff; /* lighter blue */
+	text-decoration: none;
+}	
+
 
 a:hover {
-    color: #2980b9;
-}
-
-/* Header */
-
-header {
-    width: 100%;
-    position: absolute;
-    top: 0;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
-}
-
-.logo {
-    font-size: 46px;
-    color: #2980b9;
-    font-family: 'Bitter', serif;
-    font-weight: bold;
-}
-
-.nav-item {
-    margin: 0 10px;
-    color: #2c3e50;
-}
-
-.nav-item2 {
-    margin: 0 10px;
-    color: #ffffff;
-	display: flex;
-    flex-direction: column;
-	border:0;
-	justify-content: space-between;
-}
-
-/* Greeting */
-
-
-.greeting {
-    font-size: 52px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.greeting-text {
-    font-size: 56px;
-    text-transform: uppercase;
-}
-
-.greeting-name {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #2980b9;
-    font-family: 'Bitter', serif;
-}
-
-/* Angle icon */
-
-.angle-icon {
-    text-align: center;
-}
-.angle-down {
-    position: absolute;
-    bottom: 0;
-    right: auto;
-    left: auto;
-    color: #2c3e50;
-}
-
-/* About */
-
-.about {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.about-title {
-    font-size: 30px;
+    color: #4f6f8e; /* change text colour when the user hovers over the link */
 }
 
 
-.about-image {
-    width: 15%;
-    border-radius: 50%;
-    padding: 50px 0;
-}
-
-.about-text {
-    padding-top: 20px;
-    margin: 0;
-}
-
-.about-content {
-    padding-top: 20px;
-    margin: 5px;
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.view-resume-button {
-    font-size: 24px;
-    padding-top: 100px;
-}
-
-.view-resume-button-link {
-    text-decoration: none;
-    color: #ecf0f1;;
-    text-transform: uppercase;
-    font-family: 'Bitter', serif;
-    font-weight: bold;
-}
-
-/* Video */
-
-.video {
-    text-align: center;
-    padding: 200px 0 100px 0;
-}
-
-.video-title {
-    font-size: 56px;
-    text-transform: uppercase;
-}
-
-.video-image {
-    padding: 100px 0;
-    width: 65%;
-}
-
-.video-watch {
-    font-size: 24px;
-}
-
-.video-link {
-    text-decoration: none;
-    color: #2c3e50;
-    text-transform: uppercase;
-    font-family: 'Bitter', serif;
-    font-weight: bold;
-}
-
-/* Footer */
 
 .footer {
-    background-color: #bdc3c7;
+	height: 10%;
+    background-color: #ffee9e;
     color: #2c3e50;
     text-align: center;
-    padding: 100px;
-}
+    padding: 20px;
+}	
 
-.footer-title {
-    font-size: 20px;
-}
-
-.footer-subtitle {
-    font-size: 11px;
-}
-
-.social-media {
-    padding: 50px;
-}
-
-.social-media-icon {
-    display: inline-block;
-    padding: 10px;
-}
-
-.social-media-icon:hover {
-    color: #2980b9;
-}
-
-.social-media-icon-link {
-    text-transform: none;
-    color: #2c3e50;
-    border:none;
-}
-
+	
 .trademark {
-    font-size: 13px;
-    color: #7f8c8d;
+	font-size: 13px;
+    color: #2c3e50;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
