@@ -31,6 +31,13 @@ body {
 	text-align: center;
 }
 
+.page_title {
+	font-size: 30px;
+	text-align: center;
+	color: #2c3e50; /* dark blue */
+	padding: 30px;
+}
+
 .sky {	
 	height: 80%;
 	
@@ -52,7 +59,12 @@ body {
 
 
 .video_screen {
-	height: 200%; /* to control the height of the blue section */
+	height: 220%; /* to control the height of the blue section */
+	background: #a0ceff
+}
+
+
+.sea {
 	background: #a0ceff
 }
 
@@ -89,9 +101,33 @@ body {
 	
 .video_content {
 	font-size: 15px;
-	color: #ffffff; /* lighter blue */
+	color: #ffffff; /* white */
 	text-decoration: none;
 }	
+
+.back_home_button {
+	font-size: 20px;
+	color: #2c3e50; /* dark blue */
+	text-decoration: none;
+}	
+
+.photo_section {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.photo_row {
+	display: flex;
+	padding: 10px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.photo_item {
+	padding: 10px;
+}
 
 
 a:hover {
